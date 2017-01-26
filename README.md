@@ -29,3 +29,5 @@ Express 預設的模板語言是 jade，改用 Handlebars；使用 `--git` 參�
 安裝必要套件：`npm install -D gulp gulp-nodemon browser-sync`，之後編寫 gulpfile.js 即可。
 
 進行本地開發時，在專案目錄下輸入 `gulp`。
+
+> 偶爾就是會出現卡住、沒有更新的狀態，通常 Ctrl + C 停止、再執行一次，也出現過得重新關閉當下的終端機連線再來一次的狀態，不是非常穩定。

@@ -4,11 +4,11 @@ var bs = require('browser-sync').create();
 var exec = require('child_process').exec;
 
 // gulp.task('mongo', function (cb) {
-//   exec('mongod --config /usr/local/etc/mongod.conf', function (err, stdout, stderr) {
-//     console.log(stdout);
-//     console.log(stderr);
-//     cb(err);
-//   });
+//   // exec('mongod --config /usr/local/etc/mongod.conf', function (err, stdout, stderr) {
+//   //   console.log(stdout);
+//   //   console.log(stderr);
+//   //   cb(err);
+//   // });
 // });
 
 // our browser-sync config + nodemon chain
@@ -35,7 +35,7 @@ gulp.task('nodemon', function (cb) {
 		ignore: ['public/**/*.js'],
 		env: {
 			'NODE_ENV': 'development',
-			'DEBUG': 'test:*'
+			'DEBUG': 'fullstackjs:*'
 	 }
 	}).on('start', function () {
 		if (!started) {
@@ -46,13 +46,8 @@ gulp.task('nodemon', function (cb) {
 	.on('crash', function() {
 		console.log('nodemon.crash');
 	})
-	// .on('restart', function() {
-	// 	//console.log('nodemon.restart');
-	// })
-	.on('restart', function onRestart() {
-		setTimeout(function () {
-	    bs.reload({ stream: false });
-	  }, 1000);
+	.on('restart', function() {
+		//console.log('nodemon.restart');
 	})
 	.once('quit', function () {
 		// handle ctrl+c without a big weep
@@ -61,7 +56,7 @@ gulp.task('nodemon', function (cb) {
 });
 
 // the real stuff
-gulp.task('default', ['mongo', 'browser-sync'], function () {
+gulp.task('default', ['browser-sync'], function () {
 	gulp.watch('./views/**/*.hbs', bs.reload);
 	gulp.watch('./public/**/*.js', bs.reload);
 	gulp.watch('./public/**/*.css', bs.reload);
