@@ -1,8 +1,13 @@
 # FullStack JavaScript
 
-在 Mac 電腦上以 Node + Express + MongoDB 做全棧開發。跟著[這本書](http://www.fullstackjs.com/book/index.html)演練完第一遍獲得鳥瞰式的理解，第二遍將各種開發環境配置妥當，並根據個人需求做出調整，第三遍則根據個人架構快速演練。
+### Todos
+
+- 研究 [Browsersync + Gulp.js](https://www.browsersync.io/docs/gulp) 與 [gulp-nodemon](https://github.com/JacksonGariety/gulp-nodemon) 文件，確認 gulp flow 的修正。
+- 將本地 Sass 編譯流程加入 gulp。
 
 ### 準備工作
+
+在 Mac 電腦上以 Node + Express + MongoDB 做全棧開發。跟著[這本書](http://www.fullstackjs.com/book/index.html)演練完第一遍獲得鳥瞰式的理解，第二遍將各種開發環境配置妥當，並根據個人需求做出調整，第三遍則根據個人架構快速演練。
 
 1. 一台 Mac 電腦。
 2. 已安裝 Homebrew，並以 NVM 安裝好 Node、升級完 NPM，當然也安裝了 Git。
