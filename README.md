@@ -2,8 +2,7 @@
 
 ### Todos
 
-- 研究 [Browsersync + Gulp.js](https://www.browsersync.io/docs/gulp) 與 [gulp-nodemon](https://github.com/JacksonGariety/gulp-nodemon) 文件，確認 gulp flow 的修正。
-- 將本地 Sass 編譯流程加入 gulp。
+測試使用 GitHub Project 功能，因此都堆積到那邊去了⋯⋯
 
 ### 準備工作
 
